@@ -1,0 +1,47 @@
+{
+  "name": "corscraft",
+  "version": "1.0.0",
+  "description": "Developer-first CORS & Preflight Simulator, Cross-Origin Linter, Security Header Auditor & Bento Grid Studio. Author: Jatin Sharma (https://jatinsh.netlify.app/)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "corscraft": "dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node /Users/jatinsharma/.local/bin/lib/node_modules/typescript/bin/tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "start": "node dist/cli.js",
+    "studio": "node dist/cli.js studio",
+    "audit": "node dist/cli.js audit",
+    "simulate": "node dist/cli.js simulate"
+  },
+  "keywords": [
+    "cors",
+    "preflight",
+    "security-headers",
+    "csp",
+    "cross-origin",
+    "http",
+    "dev-tools",
+    "linter",
+    "zero-dependencies",
+    "bento-grid",
+    "web-studio",
+    "jatin-sharma"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/corscraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raghav1924/corscraft/issues"
+  },
+  "homepage": "https://github.com/raghav1924/corscraft#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
